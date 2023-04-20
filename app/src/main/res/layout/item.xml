@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtht"
+        android:text="ho ten"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+        android:id="@+id/txtns"
+        android:text="ngay sinh"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/txtht"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+        android:id="@+id/txtdc"
+        android:text="dia chi"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+        android:id="@+id/txtgt"
+        android:layout_below="@id/txtht"
+        android:layout_toRightOf="@id/txtht"
+        android:layout_marginLeft="100dp"
+        android:text="gioi tinh"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+        android:id="@+id/txtt"
+        android:text="truong"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtgt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+</RelativeLayout>

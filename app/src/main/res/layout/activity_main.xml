@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/tv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:text="THÔNG TIN SINH VIÊN"
+    ></TextView>
+<EditText
+    android:id="@+id/edtht"
+    android:layout_below="@id/tv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:hint="Họ và tên"
+    ></EditText>
+<EditText
+    android:id="@+id/edtns"
+    android:layout_below="@id/edtht"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:hint="Ngày sinh"
+    ></EditText>
+<EditText
+    android:id="@+id/edtdc"
+    android:layout_below="@id/edtns"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:hint="Địa chỉ"
+    ></EditText>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edtdc"
+    android:text="Giới tính"
+    android:textSize="20dp"
+    ></TextView>
+<RadioGroup
+    android:layout_marginLeft="200dp"
+    android:id="@+id/g1"
+    android:layout_below="@+id/edtdc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <RadioButton
+        android:id="@+id/nam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nam"
+        android:textSize="20dp"
+        ></RadioButton>
+    <RadioButton
+        android:id="@+id/nu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nữ"
+        android:textSize="20dp"
+        ></RadioButton>
+</RadioGroup>
+<TextView
+    android:id="@+id/tyt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/g1"
+    android:text="Trường yêu thích"
+    android:textSize="20dp"
+    >
+</TextView>
+<RadioGroup
+    android:layout_below="@id/tyt"
+    android:id="@+id/g2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <RadioButton
+        android:id="@+id/kt"
+        android:text="DH Kinh tế"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></RadioButton>
+    <RadioButton
+        android:id="@+id/cntt"
+        android:text="DH CNTT"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></RadioButton>
+    <RadioButton
+        android:id="@+id/sp"
+        android:text="DH sư phạm"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></RadioButton>
+</RadioGroup>
+<Button
+    android:layout_marginLeft="10dp"
+    android:id="@+id/btl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/g2"
+    android:text="Lưu dữ liệu"
+    android:textSize="20dp"
+    ></Button>
+<Button
+    android:id="@+id/btnht"
+    android:layout_marginLeft="50dp"
+    android:layout_toRightOf="@+id/btl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/g2"
+    android:text="hiển thị"
+    android:textSize="20dp"
+    ></Button>
+
+</RelativeLayout>
